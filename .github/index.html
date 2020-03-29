@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<style>
+.image{
+	display: flex;
+flex-direction: row;
+justify-content: space-around;
+align-items: center;
+
+}
+.paragraph{
+	display: flex;
+flex-direction: row;
+justify-content: space-around;
+font-family: 'Cinzel',sans-serif;
+text-transform:uppercase;
+color:#353535;
+}
+
+.text{
+	display: flex;
+flex-direction: row;
+	font-family: 'Baloo',sans-serif;
+	white-space: normal;
+text-align: center;
+color: #8c9398;
+font-size: 17px;
+font-weight: 50px;
+}
+
+#rectangle {
+	width: 50px;
+	height: 5px;
+	background:#3dc9b3;
+}
+
+	</style>
+
+	<link rel="stylesheet" type="text/css" link href="https://fonts.googleapis.com/css?family=Cinzel&display=swap">
+
+	<link href="https://fonts.googleapis.com/css?family=Baloo+Thambi+2|Cinzel&display=swap" rel="stylesheet">
+
+
+<br/>
+<header><h3 class="paragraph" color: #353535>Love what you do, and you'll do it well</h3></header>
+<hr/>
+<br/>
+<div class="image">
+	<img id="computer" src="computer.png">
+	<img id="code" src="code.png">
+	<img id="heart" src="heart.png">
+</div>
+<div class="paragraph">
+	<h4>Digital design//</h4>
+	<h4>Web development//</h4>
+	<h4>We love you//</h4>
+</div>
+<div class="image">
+<div id="rectangle"></div>
+<div id="rectangle"></div>
+<div id="rectangle"></div>
+</div>
+
+<div class="text">
+	<p>Lorem ipsum dolor sit amet, consectetur
+ adipiscing elit. Donec eget sem vel orci
+ cursus dictum blandit in erat. Praesent
+ ultricies lectus dolor, cursus vehicula
+ elit laoreet non. Etiam suscipit arcu lectus,
+ in tempor lectus molestie eget. </p>
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget sem vel orci cursus dictum blandit in erat. Praesent ultricies lectus dolor, cursus vehicula elit laoreet non. Etiam suscipit arcu lectus, in tempor lectus molestie eget.</p>
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget sem vel orci cursus dictum blandit in erat. Praesent ultricies lectus dolor, cursus vehicula elit laoreet non. Etiam suscipit arcu lectus, in tempor lectus molestie eget.</p>
+</div>
+<script>
+	
+	//1.Найти элемент по getElement
+	//2. Повесить click
+	//3. Выводить названия alert
+        let computer = document.getElementById("computer");
+		let code = document.getElementById("code");
+		let heart = document.getElementById("heart");
+
+
+
+
+	function myComputer(){
+			alert("Computer");
+	}
+	computer.addEventListener('click', myComputer);
+
+	function myCode(){
+			alert("Code");
+	}
+	code.addEventListener('click', myCode);
+
+	function myHeart(){
+			alert("Heart");
+	}
+	heart.addEventListener('click', myHeart);
+</script>
+
+</body>
+</html>
