@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>Ahmadullina</title>
+    <link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/stl.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+</head>
+<body>
+    <div id="header">
+    <div id="button"></div>
+    <span class="txthead"> HALCYON<span class="txtheadd">DAYS</span></span>
+    <span class="txtheaddd">An exclusive HTML5/CSS3 freebie by Peter Finlan, for Codrops</span>
+    <div class="knopka"><div id="knopka-text"><a href="https://vk.com/wothless">LEARN MORE</a></div></div>
+    </div>
+    <div class="mainbox">
+     <p id="zagolovok">A Creative Protfolio Template</p>
+	<div class="line"></div>
+	<div class="xtx">
+	<div class="txt">Sed a lorem quis neque interdum consequat ut sed sem. Duis quis tempor nunc. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent id tempor ipsum. Fusce at massa ac nunc porta fringilla sed eget neque. Quisque quis pretium nulla. Fusce eget bibendum neque, vel volutpat augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Interdum et malesuada fames ac ante ipsum primis in faucibus.</div></div>
+    </div>
+<script type="text/javascript">
+const url = "https://jsonplaceholder.typicode.com/posts?userId=1"
+function fetchSome() {
+    console.log("Fetch started")
+    return fetch(url)
+        .then(respone => respone.json())
+}
+fetchSome()
+    .then(data => {
+        console.log("Data: ", data)
+    })
+    .catch(e => console.error(e))
+
+async function fetchSomeAsync() {
+    console.log("Async fetch started")
+    try {
+        const respone = await fetch(url)
+        const data = await respone.json()
+        console.log("Data: ", data)
+    } catch (e) {
+        console.error(e)
+    }
+}
+fetchSomeAsync()
+</script>
+</body>
+</html>
